@@ -1,8 +1,6 @@
-.h1 {
+.box {
+	display: flex;
+	align-items: center;
+	gap: 30px;
 	margin-bottom: 20px;
-}
-.loader {
-	position: absolute;
-	top: 15px;
-	left: 220px;
 }

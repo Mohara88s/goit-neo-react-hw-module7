@@ -30,16 +30,17 @@ export default function App() {
 		<>
 			<Section>
 				<Container>
-					<h1 className={style.h1}>Phonebook</h1>
-					{loading && !error && (
-						<ClipLoader
-							color="#1976d2"
-							size={40}
-							aria-label="Loading Spinner"
-							data-testid="loader"
-							className={style.loader}
-						/>
-					)}
+					<div className={style.box}>
+						<h1 className={style.h1}>Phonebook</h1>
+						{loading && !error && (
+							<ClipLoader
+								color="#1976d2"
+								size={40}
+								aria-label="Loading Spinner"
+								data-testid="loader"
+							/>
+						)}
+					</div>
 					<ContactForm />
 					<SearchBox />
 					<ContactList />
