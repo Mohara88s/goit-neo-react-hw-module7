@@ -1,0 +1,20 @@
+.contacts_list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.contacts_list_item {
+	flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.contacts_list_item {
+		flex-basis: calc((100% - 10px) / 2);
+	}
+}
+
+@media screen and (min-width: 1158px) {
+	.contacts_list_item {
+		flex-basis: calc((100% - 2 * 10px) / 3);
+	}
+}

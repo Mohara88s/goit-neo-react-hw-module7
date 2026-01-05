@@ -1,0 +1,32 @@
+.contact_card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.contact_card_info_item {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	font-size: 18px;
+}
+.contact_card_info_item > svg {
+	flex-shrink: 0;
+	width: 18px;
+	height: 18px;
+}
+.contact_card_info_item:first-child {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.contact_card_info_item:first-child p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 225px;
+	}
+}
